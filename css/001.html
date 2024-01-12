@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="dataContainer"></div>
+
+  <script>
+    fetch('https://jsonplaceholder.typicode.com/todos')
+      .then(Response => {
+        if (!Response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return Response.json();
+      })
+      .then(data => {
+        const dataContainer = document.getElementById('dataContainer');
+        data.forEach(todo => {
+          const todoItem = document.createElement('div');
+          todoItem.textContent = `Title: ${todo.title}, Completed: ${todo.completed}`;
+          todoItem.classList.add('tool');
+          dataContainer.appendChild(todoItem);
+        });
+
+      })
+      .catch(error => {
+        console.error('Fetch error:', error.message);
+      })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script>
+    axios.get('')
+  </script>
+</body>
+
+</html>

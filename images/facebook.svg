@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0866ff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="250" cy="250" r="250"/>
+  <path class="cls-2" d="M273.24,85.3h64.59v52.89h-33.19s-25.93,2.22-25.93,26.37v43.85h57.19l-9.78,59.78h-46.74v146.52h-65.11v-147.67h-52.11v-59.22h53v-56.44s8.15-66.07,58.07-66.07Z"/>
+</svg>
